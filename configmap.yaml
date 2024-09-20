@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-configmap
+  namespace: default
+data:
+  APP_MODE: production
+  APP_PORT: "8080"
+  DATABASE_URL: jdbc:mysql://localhost:3306/mydatabase
+  config-file.properties: |
+    key1=value1
+    key2=value2
+  another-config.yaml: |
+    keyA: valueA
+    keyB: valueB
+
